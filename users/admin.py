@@ -9,4 +9,4 @@ class CustomUserAdmin(UserAdmin):
     model = get_user_model()
 
 
-admin.site.register(models.CustomUser)
+admin.site.register(models.CustomUser, CustomUserAdmin)
