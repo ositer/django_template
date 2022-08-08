@@ -16,10 +16,8 @@ import os
 import environ
 import dj_database_url
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 environ.Env.read_env(os.path.join(BASE_DIR, 'env', '.env'))
 # Quick-start development settings - unsuitable for production
@@ -32,7 +30,6 @@ SECRET_KEY = os.environ.get('DJ_SECRET_KEY')
 DEBUG = int(os.environ.get('DJ_DEBUG', False))
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -76,7 +73,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
